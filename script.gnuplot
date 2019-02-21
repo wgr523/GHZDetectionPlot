@@ -1,6 +1,6 @@
-set term pdf font ",80" size 14,8
+set term pdf font ",60" size 14,8
 set size ratio 0.67
-set lmargin at screen 0.25
+set lmargin at screen 0.2
 
 set style data lines
 set yrange[0.25:0.5]
@@ -22,13 +22,7 @@ plot "Res_To_Plot_5.dat" using 1:2 notitle with linespoints lt rgb "blue" lw 8 p
 set output
 
 ##############################################
-set term pdf font ",80" size 14,8
-set size ratio 0.67
-#set bmargin 5
 #unset lmargin
-
-set style data lines
-set yrange[0.25:0.5]
 
 set xlabel "|S|"
 set noylabel
@@ -49,12 +43,6 @@ plot "Res_To_Plot_10.dat" using 1:2 notitle with linespoints lt rgb "blue" lw 8 
 set output
 
 ##############################################
-set term pdf font ",80" size 14,8
-set size ratio 0.67
-#set bmargin 5
-
-set style data lines
-set yrange[0.25:0.5]
 
 set xlabel "|S|"
 set noylabel
@@ -64,7 +52,7 @@ set xtics 3
 set ytics 0.05
 set format y ""
 set key bottom right
-set key font ",64"
+set key font ",60"
 
 set output "tmp3.pdf"
 
